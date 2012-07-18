@@ -42,7 +42,27 @@ public abstract class DefaultApi20 implements Api
   {
     return Verb.GET;
   }
-	
+
+  /**
+   * Returns the verb for the access token parameters (defaults to GET)
+   *
+   * @return access token endpoint verb
+   */
+  public Verb getAccessTokenParametersVerb()
+  {
+    return Verb.GET;
+  }
+
+  /**
+   * Returns if the grant_type parameter must be set (defaults to false)
+   *
+   * @return if the grant_type parameter must be set
+   */
+  public boolean isGrantTypeRequired()
+  {
+    return false;
+  }
+
   /**
    * Returns the URL that receives the access token requests.
    * 
