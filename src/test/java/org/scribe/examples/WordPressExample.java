@@ -22,8 +22,8 @@ public class WordPressExample
   public static void main(String[] args)
   {
     // Replace these with your own api key and secret
-    String apiKey = "this_is_your_key";
-    String apiSecret = "this_is_your_secret";
+    String apiKey = "209";
+    String apiSecret = "xJBXMRVvKrvHqyvM6BpzkenJVMIdQrIWKjPJsezjGYu71y7sDgt8ibz6s9IFLqU8";
     OAuthService service = new ServiceBuilder().provider(WordPressApi.class).apiKey(apiKey).apiSecret(apiSecret).callback("http://www.google.com/").build();
     Scanner in = new Scanner(System.in);
 
